@@ -1,0 +1,48 @@
+/* CSS styles for the header */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+}
+
+nav ul li {
+    margin-left: 20px; 
+    margin-right: 40px; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: font-size 0.3s, background-color 0.3s;
+    
+}
+
+nav ul li a:hover {
+    font-size: 18px; 
+    color: orange;
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -1,0 +1,128 @@
+/* CSS styles for the HERO section */
+#heroSection {
+    height: 100vh;
+    background-image: url('img/backg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(94, 96, 104, 0.6) ;    
+    background-size: cover;
+    min-height: 600px;
+}
+#leftContainer {
+    height: 400px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: #fff;
+}
+
+#rightContainer {
+    width: 38%;
+    background-image: url('img/picme.jpg');
+    border: 3px solid rgb(215, 120, 3);
+    box-shadow: 20px -15px 5px 0px rgb(215, 120, 3);
+    border-radius: 50%;
+    margin-top: 30px;
+    background-size:cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: showShadow 4s infinite alternate;
+}
+
+@keyframes showShadow {
+    0% {
+        box-shadow: 
+            0 0 0 0 rgb(215, 120, 3),
+            0 0 0 0 rgb(215, 120, 3),
+            0 0 0 0 rgb(215, 120, 3);
+    }
+    25% {
+        box-shadow: 
+            0 0 0 10px rgb(215, 120, 3, 0.7), 
+            0 0 0 0 rgb(215, 120, 3),
+            0 0 0 0 rgb(215, 120, 3);
+    }
+    50% {
+        box-shadow: 
+            0 0 0 10px rgb(215, 120, 3, 0.7),
+            0 0 0 20px rgb(215, 120, 3, 0.5), 
+            0 0 0 0 rgb(215, 120, 3);
+    }
+    75% {
+        box-shadow: 
+            0 0 0 10px rgb(215, 120, 3, 0.7),
+            0 0 0 20px rgb(215, 120, 3, 0.5),
+            0 0 0 30px rgb(215, 120, 3, 0.3); 
+    }
+    100% {
+        box-shadow: 
+            0 0 0 0 rgb(215, 120, 3),
+            0 0 0 0 rgb(215, 120, 3),
+            0 0 0 0 rgb(215, 120, 3); 
+    }
+}
+
+#greet {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-top: 200px;
+}
+
+#myname {
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: rgb(215, 120, 3);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 8px;
+}
+
+#mywork{
+    font-size: 35px;
+    margin-top: 0px;
+}
+
+#content {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttons button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    border: 3px solid orange;
+    border-radius: 30px;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.hero-container .buttons button:hover {
+    background-color: #060505;
+    border: 3px solid white;
+    width: 220px;
+    font-size: 20px;
+
+
+}

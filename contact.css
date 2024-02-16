@@ -1,0 +1,94 @@
+#contactSection {
+    height: 100%;
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+#contact {
+    margin-left: auto; 
+    margin-right: auto;
+    border: 3px solid black;
+    padding: 50px;
+    width: 900px;
+    background: radial-gradient(orange 6px, transparent 7px) repeat-x,
+                linear-gradient(rgba(255, 255, 255, 0.8) 1px, transparent 1px), 
+                linear-gradient(90deg, rgba(255, 255, 255, 0.8) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-color: rgb(246, 219, 168);
+    border-radius: 2rem;
+    border: 3px dashed orange;
+}
+
+.contact-form {
+    background-color: #f1dfa4;
+    border: 3px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group.row .col {
+    flex: 0 0 calc(50% - 10px);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]#message {
+    width: 100%;
+    padding: 60px; /* Increase padding to make the input field bigger */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+button.cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.cta:hover {
+    background-color: #0056b3;
+}
+
+button.cta span {
+    margin-right: 5px;
+}
